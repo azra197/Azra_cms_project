@@ -1,0 +1,10 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "5.2.28"
+    },
+    "autoload": {
+        "classmap": [
+            "classes"
+        ]
+    }
+}
