@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blog Home - Start Bootstrap Template</title>
+    <title>Blog Home - Places on Earth</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/cms/css/bootstrap.min.css" rel="stylesheet">

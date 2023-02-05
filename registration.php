@@ -16,7 +16,7 @@ if(isset($_GET['lang']) && !empty($_GET['lang'])) {
         include "includes/languages/".$_SESSION['lang'].".php";
     } else {
         include "includes/languages/en.php";
-    }
+    } 
 
 
 // AUTHENTICATION

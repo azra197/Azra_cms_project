@@ -2,7 +2,7 @@
  <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; CMS</p>
+                    <p>Copyright &copy;</p>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>

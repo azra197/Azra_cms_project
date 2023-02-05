@@ -55,7 +55,7 @@
                         $post_author = $row['post_user'];
                         $post_date = $row['post_date'];
                         $post_image = $row['post_image'];
-                        $post_content = substr($row['post_content'], 0, 100);
+                        $post_content = substr($row['post_content'], 0, 100); //substr smanji da je tekst vidljiv na 100 karaktera
                         $post_status = $row['post_status'];
 
                 ?>
@@ -115,7 +115,7 @@
 
                 echo "<li><a href='index.php?page={$i}'>{$i}</a></li>";
             }
-        }
+        } 
 
 
         ?>

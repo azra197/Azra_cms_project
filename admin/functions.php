@@ -104,7 +104,7 @@ function is_the_logged_in_user_owner($post_id){
 function get_all_user_posts()
 {
     return query("SELECT * FROM posts WHERE user_id=" . loggedInUserId() . "");
-}
+} 
 
 function get_all_post_user_comments()
 {

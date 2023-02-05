@@ -47,16 +47,16 @@ if (isset($_POST['checkBoxArray'])) {
                     $post_user = $row['post_user'];
                     $post_title = $row['post_title'];
                     $post_category_id = $row['post_category_id'];
-                    $post_status = $row['post_status'];
-                    $post_image = $row['post_image'];
-                    $post_tags = $row['post_tags'];
-                    $post_content = $row['post_content'];
+                    $post_status = escape($row['post_status']);
+                    $post_image = escape($row['post_image']);
+                    $post_tags = escape($row['post_tags']);
+                    $post_content = escape($row['post_content']);
                     $post_date = $row['post_date'];
 
                     if (empty($post_tags)) {
                         $post_tags = "no tags";
                     }
-                }
+                } 
 
                 $query = "INSERT INTO posts(post_category_id, post_title, post_author, post_user, post_date, post_image, post_content, post_tags, post_status) ";
 
@@ -226,7 +226,7 @@ if (isset($_POST['checkBoxArray'])) {
 
 
 <?php
-/*
+
 if (isset($_POST['delete'])) {
 
     $the_post_id = escape($_POST['post_id']);
@@ -242,8 +242,8 @@ if (isset($_GET['reset'])) {
     $reset_query = mysqli_query($connection, $query);
     header("Location: posts.php");
 }
-*/
 
+/*
 if(isset($_GET['delete'])){
     $post_id = $_GET['p_id'];
     if(is_the_logged_in_user_owner($post_id)){
@@ -266,6 +266,7 @@ if(isset($_GET['reset'])){
         redirect("posts.php");
     }
 }
+*/
 ?>
 
 <!--
